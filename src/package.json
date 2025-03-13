@@ -1,0 +1,40 @@
+{
+    "name": "landing-page-nareia",
+    "version": "1.0.0",
+    "description": "Landing page para eventos de Beach Tennis Nareia",
+    "main": "src/index.js",
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "dependencies": {
+      "react": "^18.2.0",         // React
+      "react-dom": "^18.2.0",     // React DOM para renderização no navegador
+      "react-router-dom": "^6.3.0", // React Router para navegação entre páginas
+      "styled-components": "^5.3.5", // Para estilizar com Styled Components
+      "react-icons": "^4.3.1",    // Biblioteca de ícones
+      "axios": "^0.27.2"          // (Opcional) Biblioteca para fazer requisições HTTP
+    },
+    "devDependencies": {
+      "react-scripts": "^5.0.0"    // Ferramenta para rodar o ambiente de desenvolvimento React
+    },
+    "engines": {
+      "node": ">=14.0.0",           // Versão mínima do Node.js necessária
+      "npm": ">=6.0.0"              // Versão mínima do npm necessária
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+  
