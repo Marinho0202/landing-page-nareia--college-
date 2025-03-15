@@ -1,13 +1,16 @@
 // src/components/HeroSection.js
 import React from 'react';
+import './HeroSection.css'; //TEMOS Q CRIAR AINDA
+
 
 const HeroSection = () => {
   return (
-    <section className="hero">
-      <h2>Eventos de Beach Tennis Nareia</h2>
-      <p>Participe dos nossos eventos e mostre seu talento nas quadras!</p>
-      <button>Saiba Mais</button>
-      <button>Participe</button>
+    <section className="hero-section">
+      <div className="hero-content">
+        <h1>Bem-vindo aos Torneios de Beach Tennis</h1>
+        <p>Fique por dentro dos próximos eventos de Beach Tennis organizados pela Nareia.</p>
+        <button>Saiba Mais</button>
+      </div>
     </section>
   );
 };

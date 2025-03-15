@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';  // Importa o arquivo de estilos (se você estiver utilizando um arquivo global de CSS)
+import './index.css';  
 import App from './App';  // Importa o componente principal da aplicação
 import { BrowserRouter as Router } from 'react-router-dom';  // Importa o Router para a navegação
 
