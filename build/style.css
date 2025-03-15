@@ -1,0 +1,27 @@
+/* Fundo estático (fixo) */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('/assets/fundoestatico.jpg') no-repeat center center fixed;
+    background-size: cover;  /* Para garantir que a imagem cubra toda a tela */
+  }
+  
+  /* Definindo o fundo da página de conteúdo */
+  .container {
+    position: relative;
+    z-index: 2;  /* Coloca o conteúdo à frente do fundo fixo */
+    padding: 20px;
+    height: 100vh;  /* A altura do conteúdo será igual à altura da janela */
+    overflow: auto;  /* Permite rolar a página */
+  }
+  
+
+  /* Fundo em movimento */
+.hero-section {
+    background: url('/assets/fundo.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh; /* Altura do componente */
+    position: relative;
+    z-index: 1;
+  }

@@ -15,4 +15,15 @@ const Eventos = ({ eventos }) => {
   );
 };
 
+const HeroSection = () => {
+  return (
+    <div className="hero-section">
+      <div className="content">
+        <h2>Futuros Torneios</h2>
+        <p>Confira os próximos torneios de Beach Tennis organizados pela Nareia!</p>
+      </div>
+    </div>
+  );
+};
+
 export default Eventos;

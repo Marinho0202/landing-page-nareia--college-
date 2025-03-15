@@ -1,13 +1,13 @@
 // src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';  // Importando o arquivo de estilos globais
-import App from './App';  // Importa o componente principal da aplicação
+import './index.css';  // Importando o CSS global
+import App from './App';  // Importando o App.js
 
 // Cria o "root" onde o React vai renderizar a aplicação
 const rootElement = document.getElementById('root');
 
-// Cria um root e renderiza o componente App
+// Criando a raiz e renderizando o componente App
 const root = ReactDOM.createRoot(rootElement);
 
 root.render(

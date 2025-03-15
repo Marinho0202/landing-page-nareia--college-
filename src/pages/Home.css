@@ -1,0 +1,17 @@
+/* src/pages/Home.css */
+.tournaments {
+    background: #fff;  /* Cor de fundo para a seção de torneios */
+    padding: 40px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .tournaments h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .tournaments p {
+    font-size: 1.2rem;
+  }
+  

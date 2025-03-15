@@ -1,0 +1,20 @@
+/* src/pages/EventDetail.css */
+.event-detail {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .event-detail img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .event-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .event-detail p {
+    font-size: 1.2rem;
+  }
+  

@@ -1,37 +1,52 @@
+/* Fundo estático (fixo) */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url('/assets/fundoestatico.jpg') no-repeat center center fixed;
+  background-size: cover;  /* Para garantir que a imagem cubra toda a tela */
+}
+
+/* Definindo o fundo da página de conteúdo */
+.container {
+  position: relative;
+  z-index: 2;  /* Coloca o conteúdo à frente do fundo fixo */
+  padding: 20px;
+  height: 100vh;  /* A altura do conteúdo será igual à altura da janela */
+  overflow: auto;  /* Permite rolar a página */
+}
+
+
+
 /* src/components/HeroSection.css */
+
+/* Fundo fixo da HeroSection */
 .hero-section {
-    background-image: url('/assets/hero-background.jpg');
-    background-size: cover;
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-  }
-  
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .hero-section h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-  }
-  
-  .hero-section p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-  }
-  
-  .hero-section button {
-    padding: 15px 30px;
-    background-color: #ff5e00;
-    color: white;
-    border: none;
-    font-size: 1.1em;
-    cursor: pointer;
-  }
-  
-  .hero-section button:hover {
-    background-color: #ff8a30;
-  }
-  
+  background: url('/assets/fundo-movimento.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh; /* Altura de toda a tela */
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Conteúdo dentro da HeroSection */
+.content {
+  z-index: 2; /* Coloca o conteúdo acima do fundo */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Definindo o fundo fixo do body (que não se move) */
+body {
+  background: url('/assets/fundoestatico.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
