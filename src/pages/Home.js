@@ -1,10 +1,10 @@
 // src/pages/Home.js
 import React from 'react';
-import HeroSection from '../components/HeroSection';  // Importando HeroSection
-import Eventos from '../components/Eventos';  // Importando Eventos
-import './Home.css';
+import HeroSection from '../components/HeroSection';
+import Eventos from '../components/Eventos';  // Importando o componente Eventos
 
 const Home = () => {
+  // Dados de exemplo para os eventos
   const eventos = [
     { id: 1, name: "Torneio de Casais", date: "17 de março", location: "Arena Nareia", image: "/assets/evento1.jpg" },
     { id: 2, name: "Torneio CONAFE", date: "19 de março", location: "Arena Nareia", image: "/assets/evento2.jpg" },
@@ -13,8 +13,8 @@ const Home = () => {
 
   return (
     <div>
-      <HeroSection />  {/* Seção Hero */}
-      <Eventos eventos={eventos} />  {/* Lista de Eventos */}
+      <HeroSection />
+      <Eventos eventos={eventos} />  {/* Passando os eventos para o componente */}
     </div>
   );
 };

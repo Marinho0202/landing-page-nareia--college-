@@ -1,6 +1,7 @@
 // src/components/EventCard.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';  // Para navegação entre páginas
+import './EventCard.css';
 
 const EventCard = ({ evento }) => {
   return (

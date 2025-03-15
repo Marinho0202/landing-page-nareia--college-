@@ -1,0 +1,52 @@
+/* src/components/NavBar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ff5e00; /* Cor de fundo da NavBar (Laranja, inspirado no seu protótipo) */
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar .logo img {
+    width: 150px; /* Ajuste o tamanho do logo conforme necessário */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px; /* Espaço entre os links */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+  }
+  
+  .nav-links a:hover {
+    color: #ff8a30; /* Cor de hover para os links */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
+  
