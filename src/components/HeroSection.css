@@ -1,52 +1,19 @@
-/* Fundo estático (fixo) */
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  background: url('/assets/fundoestatico.jpg') no-repeat center center fixed;
-  background-size: cover;  /* Para garantir que a imagem cubra toda a tela */
-}
-
-/* Definindo o fundo da página de conteúdo */
-.container {
-  position: relative;
-  z-index: 2;  /* Coloca o conteúdo à frente do fundo fixo */
-  padding: 20px;
-  height: 100vh;  /* A altura do conteúdo será igual à altura da janela */
-  overflow: auto;  /* Permite rolar a página */
-}
-
-
-
 /* src/components/HeroSection.css */
-
-/* Fundo fixo da HeroSection */
 .hero-section {
-  background: url('/assets/fundo-movimento.jpg') no-repeat center center;
-  background-size: cover;
-  height: 100vh; /* Altura de toda a tela */
   position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  height: 100vh; /* Ajuste para o tamanho total da tela */
+  width: 100%;
+  overflow: hidden;
 }
 
-/* Conteúdo dentro da HeroSection */
-.content {
-  z-index: 2; /* Coloca o conteúdo acima do fundo */
-  text-align: center;
-  padding: 20px;
-}
-
-/* Definindo o fundo fixo do body (que não se move) */
-body {
-  background: url('/assets/fundoestatico.jpg') no-repeat center center fixed;
+.hero-background {
+  background-image: url('/public/assets/fundoestatico.jpg'); /* Caminho correto da imagem */
+  background-position: center;
   background-size: cover;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
-

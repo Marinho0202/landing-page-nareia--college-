@@ -1,52 +1,57 @@
 /* src/components/NavBar.css */
 .navbar {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #ff662e;  /* Cor de fundo ajustada para #ff662e */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar .logo img {
+  width: 120px;  /* Tamanho da logo ajustado para 120px */
+  object-fit: contain;  /* Ajuste para manter a proporção da imagem */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;  /* Espaço entre os links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
+
+.nav-links a:hover {
+  color: #ff8a30;  /* Cor de hover para os links */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
     align-items: center;
-    padding: 20px 50px;
-    background-color: #ff5e00; /* Cor de fundo da NavBar (Laranja, inspirado no seu protótipo) */
-    color: white;
-    font-family: Arial, sans-serif;
+    padding: 20px 10px; /* Ajustando o padding para telas menores */
   }
-  
-  .navbar .logo img {
-    width: 150px; /* Ajuste o tamanho do logo conforme necessário */
-  }
-  
+
   .nav-links {
-    list-style: none;
-    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
   }
-  
+
   .nav-links li {
-    margin-left: 20px; /* Espaço entre os links */
+    margin: 10px 0;
   }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.1em;
+
+  .navbar .logo img {
+    width: 100px;  /* Reduzindo o tamanho da logo para telas pequenas */
   }
-  
-  .nav-links a:hover {
-    color: #ff8a30; /* Cor de hover para os links */
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
-    }
-  
-    .nav-links li {
-      margin: 10px 0;
-    }
-  }
-  
+}

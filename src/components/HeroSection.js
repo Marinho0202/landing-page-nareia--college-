@@ -1,29 +1,16 @@
-// src/components/Eventos.js
+// src/components/HeroSection.js
 import React from 'react';
-import EventCard from './EventCard';  // Importa o componente do card do evento
+import './HeroSection.css'; // Importando o CSS específico para o HeroSection
 
-const Eventos = ({ eventos }) => {
+const HeroSection = () => {
   return (
-    <section className="eventos">
-      <h2>Próximos Torneios</h2>
-      <div className="event-list">
-        {eventos.map((evento) => (
-          <EventCard key={evento.id} evento={evento} />
-        ))}
+    <section className="hero-section">
+      <div className="hero-background">
+        {/* O conteúdo do seu HeroSection vai aqui */}
       </div>
+      {/* Mais conteúdo aqui, se necessário */}
     </section>
   );
 };
 
-const HeroSection = () => {
-  return (
-    <div className="hero-section">
-      <div className="content">
-        <h2>Futuros Torneios</h2>
-        <p>Confira os próximos torneios de Beach Tennis organizados pela Nareia!</p>
-      </div>
-    </div>
-  );
-};
-
-export default Eventos;
+export default HeroSection;

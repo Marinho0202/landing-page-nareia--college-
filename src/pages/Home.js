@@ -1,50 +1,59 @@
 // src/pages/Home.js
 import React from 'react';
-import HeroSection from '../components/HeroSection';
 import Torneios from '../components/Torneios';  // Importando o componente de torneios
 
 const Home = () => {
-  // Dados de exemplo para os torneios
   const eventos = [
     { 
       id: 1, 
       name: "Torneio de Casais", 
       date: "17 de março", 
       location: "Arena Nareia", 
-      image: "/assets/evento1.jpg" 
+      image: "/assets/Torneio1.png", 
+      instagram: "https://www.instagram.com/torneio1", 
+      youtube: "https://www.youtube.com/watch?v=torneio1"
     },
     { 
       id: 2, 
       name: "Torneio CONAFE", 
       date: "19 de março", 
       location: "Arena Nareia", 
-      image: "/assets/evento2.jpg" 
+      image: "/assets/Torneio2.jpg", 
+      instagram: "https://www.instagram.com/torneio2", 
+      youtube: "https://www.youtube.com/watch?v=torneio2"
     },
     { 
       id: 3, 
       name: "Torneio Interno", 
       date: "25 de abril", 
       location: "Itaguaçu Country Club", 
-      image: "/assets/evento3.jpg" 
+      image: "/assets/Torneio3.jpg", 
+      instagram: "https://www.instagram.com/torneio3", 
+      youtube: "https://www.youtube.com/watch?v=torneio3"
     },
     { 
       id: 4, 
       name: "Torneio Feminino", 
       date: "Janeiro", 
       location: "Arena Nareia", 
-      image: "/assets/evento4.jpg" 
-    }
+      image: "/assets/Torneio4.jpg", 
+      instagram: "https://www.instagram.com/torneio4", 
+      youtube: "https://www.youtube.com/watch?v=torneio4"
+    },
+    { 
+      id: 5, 
+      name: "Torneio de Verão", 
+      date: "Dezembro", 
+      location: "Arena Nareia", 
+      image: "/assets/Torneio5.png", 
+      instagram: "https://www.instagram.com/torneio5", 
+      youtube: "https://www.youtube.com/watch?v=torneio5"
+    },
   ];
 
   return (
     <div>
-      <HeroSection />  {/* Exibe a HeroSection com fundo estático */}
-      <section className="torneios">  {/* Seção de torneios */}
-        <h2>Próximos Torneios</h2>
-        <div className="event-list">
-          <Torneios eventos={eventos} />  {/* Passando os dados para o componente de Torneios */}
-        </div>
-      </section>
+      <Torneios eventos={eventos} />
     </div>
   );
 };

@@ -1,18 +1,19 @@
-// src/components/NavBar.js
 import React from 'react';
-import { Link } from 'react-router-dom';  // Usando Link do React Router para navegação
-import './NavBar.css';  // Importando o arquivo CSS para a NavBar
+import { Link } from 'react-router-dom';
+import './NavBar.css';
 
 const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src="/assets/logo.png" alt="Logo Nareia" /> {/* Aqui você pode substituir pelo seu logo */}
+        <Link to="/"> {/* Link para Home */}
+          <img src="/assets/logo.png" alt="Logo" />
+        </Link>
       </div>
       <ul className="nav-links">
-        <li><Link to="/">Torneios</Link></li>
-        <li><Link to="/contato">Contato</Link></li>
+        <li><Link to="/">Home</Link></li>
         <li><Link to="/quemsomos">Quem Somos</Link></li>
+        <li><Link to="/contato">Contato</Link></li>
       </ul>
     </nav>
   );
