@@ -1,15 +1,35 @@
 // src/components/Footer.js
 import React from 'react';
-import './Footer.css';
+import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa'; // Ícones para redes sociais
+import './Footer.css'; // Importando o CSS do footer
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; 2025 Nareia. Todos os direitos reservados.</p>
-        <div className="social-links">
-          <a href="https://www.instagram.com/nareia" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://www.youtube.com/c/nareia" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <div className="footer-contact">
+          <p><strong>CONTATO</strong></p>
+          <p>beachscorearena@gmail.com</p>
+          <p>(94) 3424-0000</p>
+        </div>
+
+        <div className="footer-logo">
+          <img src="/assets/logo.png" alt="Nareia logo" />
+        </div>
+
+        <div className="footer-social">
+          <p><strong>SIGA NOS</strong></p>
+          <div className="social-icons">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+              <FaTiktok />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
